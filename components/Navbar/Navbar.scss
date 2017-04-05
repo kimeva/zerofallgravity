@@ -1,1 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400|Open+Sans:300|Reem+Kufi');
 @import 'normalize.css';
+
+.navbar-container {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0, #000000 150%);
+  height: 150px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+
+  .zfg-logo {
+    margin: 20px auto;
+    background-image: url('/static/images/zfg/zfg-logo.png');
+    width: 350px;
+    height: 24px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media 
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 2dppx) {
+      background-image: url('/static/images/zfg/zfg-logo@2x.png');
+    }
+
+    @media 
+    only screen and (-webkit-min-device-pixel-ratio: 3),
+    only screen and (   min--moz-device-pixel-ratio: 3),
+    only screen and (     -o-min-device-pixel-ratio: 3/1),
+    only screen and (        min-device-pixel-ratio: 3),
+    only screen and (                min-resolution: 3dppx) {
+      background-image: url('/static/images/zfg/zfg-logo@3x.png');
+    }
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+  .navbar-links {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+
+    li {
+      float: left;
+
+      a {
+        display: block;
+        color: #c8c8c8;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.333em;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
