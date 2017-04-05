@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import Head from 'next/head';
-import { Page, ImageLoader, Navbar } from 'components'
+import { Page, ImageLoader, Navbar, HeadComponent } from 'components';
 import { getBackgroundImage } from '../helper/util';
-import styles from 'styles/index.scss'
+import styles from 'styles/index.scss';
 
 export default class extends Component{
   render() {
     const { full, thumbnail } = getBackgroundImage();
     return (
       <div>
+        <HeadComponent />
+        <Head>
+          <title>Zero Fall Gravity</title>
+        </Head>
         <style dangerouslySetInnerHTML={{ __html: styles }} />
         <ImageLoader
           fullSrc={full}
