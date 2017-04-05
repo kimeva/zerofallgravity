@@ -2,16 +2,14 @@ import React, { Component, PropTypes } from 'react';
 import styles from './ImageLoader.scss';
 
 export class ImageLoader extends Component {
-  constructor(props) {
-    super(props);
-    this.handleImageLoaded = this.handleImageLoaded.bind(this);
+  componentWillMount() {
     this.state = {
       toggle: false,
       imgClassName: 'image'
     };
   }
 
-  handleImageLoaded() {
+  handleImageLoaded = () => {
     const loadToggle = this.state.toggle;
     this.setState({
       toggle: !loadToggle,
