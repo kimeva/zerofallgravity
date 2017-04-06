@@ -17,7 +17,7 @@ export default class extends Component{
       <div>
         <HeadComponent />
         <Head>
-          <title>Zero Fall Gravity</title>
+          <title>Zero Fall Gravity | Coming Soon</title>
         </Head>
         <style dangerouslySetInnerHTML={{ __html: styles }} />
         <ImageLoader
@@ -25,6 +25,9 @@ export default class extends Component{
           thumbnailSrc={thumbnail}
         />
         <Navbar/>
+        <div className="coming-soon-panel">
+          <p>// coming soon</p>
+        </div>
         <Footer/>
       </div>
     );

@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
 @import 'normalize.css';
 
 body {
   background: black;
+}
+
+.coming-soon-panel {
+  text-align: center;
+
+  p {
+    color: #a8a8a8;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding: 0;
+    margin: 0;
+  }
 }

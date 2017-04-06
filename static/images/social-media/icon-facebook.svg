@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/facebook">
+            <g id="facebook-official---FontAwesome---group">
+                <path d="M49.34375,4 L6.65625,4 C5.1875,4 4,5.1875 4,6.65625 L4,49.34375 C4,50.8125 5.1875,52 6.65625,52 L29.625,52 L29.625,33.40625 L23.375,33.40625 L23.375,26.15625 L29.625,26.15625 L29.625,20.8125 C29.625,14.625 33.4375,11.25 38.96875,11.25 C41.59375,11.25 43.875,11.4375 44.53125,11.53125 L44.53125,18 L40.71875,18.03125 C37.6875,18.03125 37.125,19.4375 37.125,21.53125 L37.125,26.15625 L44.28125,26.15625 L43.34375,33.40625 L37.125,33.40625 L37.125,52 L49.34375,52 C50.8125,52 52,50.8125 52,49.34375 L52,6.65625 C52,5.1875 50.8125,4 49.34375,4 L49.34375,4 Z" id="facebook-official---FontAwesome" fill="#FFFFFF"></path>
+                <rect id="base" x="0" y="0" width="56" height="56"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
