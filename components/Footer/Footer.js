@@ -24,6 +24,12 @@ export class Footer extends Component {
             </a>
           </li>
         </ul>
+        <p>
+          &#9400; {(new Date()).getFullYear()} Zero Fall Gravity
+        </p>
+        <p>
+          Background photo by: <a href="https://unsplash.com/@nathananderson">Nathan Anderson</a>
+        </p>
       </div>
     );
   }

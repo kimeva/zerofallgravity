@@ -10,6 +10,17 @@
   left: 0;
   content: '';
 
+  p {
+    color: #808080;
+    font-size: 10px;
+    font-weight: 200px;
+
+    a {
+      color: #808080;
+      text-decoration: none;
+    }
+  }
+
   .footer-links {
     display: inline-block;
     padding: 0;
