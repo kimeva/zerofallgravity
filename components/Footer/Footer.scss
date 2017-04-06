@@ -1,0 +1,45 @@
+@import 'normalize.css';
+
+.footer-container {
+  position: absolute;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  content: '';
+
+  .footer-links {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+
+    li {
+      float: left;
+
+      a {
+        .social-media-icon {
+          margin-left: 12px;
+          margin-right: 12px;
+          font-size: 30px;
+          color: #fff;
+          transition: all 0.3s ease 0s;
+        }
+
+        .fa-facebook-official {
+          &:hover {
+            color: #3B5998;
+          }
+        }
+
+        .fa-instagram {
+          &:hover {
+            color: #f56040;
+          }
+        }
+      }
+    }
+  }
+}

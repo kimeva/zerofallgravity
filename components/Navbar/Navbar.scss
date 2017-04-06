@@ -6,7 +6,6 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0, #000000 150%);
-  height: 150px;
   width: 100%;
   top: 0;
   left: 0;
@@ -41,6 +40,11 @@
       background-image: url('/static/images/zfg/zfg-logo@3x.png');
     }
 
+    @media (max-width: 375px) {
+      width: 250px;
+      height: 18px;
+    }
+
     &::after {
       content: "";
       display: table;
@@ -69,6 +73,12 @@
         padding-left: 15px;
         padding-right: 15px;
         transition: all 0.3s ease 0s;
+
+        @media (max-width: 375px) {
+          font-size: 10px;
+          padding-left: 8px;
+          padding-right: 8px;
+        }
 
         &:hover {
           color: white;
