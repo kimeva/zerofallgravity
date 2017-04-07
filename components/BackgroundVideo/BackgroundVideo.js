@@ -4,18 +4,13 @@ import styles from './BackgroundVideo.scss';
 
 export class BackgroundVideo extends Component {
   render() {
-    const webmSrc = 'https://drive.google.com/uc?export=download&id=0BxTLWA_Dv0TtelpPbXdSVUQwc00';
-    const mp4Src = 'https://drive.google.com/uc?export=download&id=0BxTLWA_Dv0TtLUNHSzN4MVpMWXc';
-    const ogvSrc = 'https://drive.google.com/uc?export=download&id=0BxTLWA_Dv0TtcTBJSFRkek52clk';
+    const vidSrc = 'https://www.youtube.com/embed/wbHVyzHo9dg?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=wbHVyzHo9dg';
     return (
       <div className="fullscreen-bg">
         <style dangerouslySetInnerHTML={{ __html: styles }} />
-        <video loop muted autoplay poster="static/images/zfg/zfg-bg-video-ss.jpg" className="fullscreen-bg__video">
-          <source src={webmSrc} type="video/webm"></source>
-          <source src={mp4Src} type="video/mp4"></source>
-          <source src={ogvSrc} type="video/ogg"></source>
-          Your browser does not support the video tag.
-        </video>
+        <iframe frameBorder="0" allowFullScreen className="fullscreen-bg__video"
+          src={vidSrc}>
+        </iframe>
       </div>
     );
   }
