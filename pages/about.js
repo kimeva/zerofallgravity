@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import Head from 'next/head';
 import {
   Page,
-  BackgroundVideo,
+  ImageLoader,
   Navbar,
   HeadComponent,
-  Footer
+  Footer,
+  About
 } from 'components';
 import { getBackgroundImage } from '../helper/util';
 import styles from 'styles/index.scss';
@@ -17,13 +18,15 @@ export default class extends Component{
       <div>
         <HeadComponent />
         <Head>
-          <title>Zero Fall Gravity</title>
+          <title>Zero Fall Gravity | About</title>
         </Head>
         <style dangerouslySetInnerHTML={{ __html: styles }} />
-        <BackgroundVideo
+        <ImageLoader
+          fullSrc={full}
+          thumbnailSrc={thumbnail}
         />
         <Navbar/>
-        <div className="filler"></div>
+        <About/>
         <Footer/>
       </div>
     );

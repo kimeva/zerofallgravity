@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import { Modal } from 'react-bootstrap';
 import styles from './Navbar.scss';
 
 const home = {
@@ -8,7 +7,7 @@ const home = {
 }
 
 const about = {
-  pathname: '/coming-soon'
+  pathname: '/about'
 }
 
 const gigs = {
@@ -20,12 +19,6 @@ const contact = {
 }
 
 export class Navbar extends Component {
-  componentWillMount() {
-    this.state = {
-      showModal: false
-    };
-  }
-
   render() {
     return (
       <div className="navbar-container">

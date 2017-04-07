@@ -5,8 +5,14 @@ body {
   background: black;
 }
 
+.filler {
+  position: relative;
+  height: calc( 100vh - 311px );
+}
+
 .coming-soon-panel {
   text-align: center;
+  height: calc( 100vh - 311px );
 
   p {
     color: #a8a8a8;
