@@ -23,6 +23,11 @@ export class Footer extends Component {
               <i className="social-media-icon fa fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
+          <li>
+            <a target="_blank" href="https://www.youtube.com/channel/UC3aZoRX6p_L7zUzGBbkLbFg/">
+              <i className="social-media-icon fa fa-youtube-play" aria-hidden="true"></i>
+            </a>
+          </li>
         </ul>
         <p>
           &#9400; {(new Date()).getFullYear()} Zero Fall Gravity

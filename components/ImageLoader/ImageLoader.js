@@ -22,7 +22,7 @@ export class ImageLoader extends Component {
     return (
       <div
         className="cover"
-        style={{ backgroundImage: `url(${thumbnailSrc}) no-repeat center center fixed` }}>
+        style={{ background: `url(${thumbnailSrc}) no-repeat center center fixed`, backgroundSize: '100% 100%' }}>
         <style dangerouslySetInnerHTML={{ __html: styles }} />
         <img
           onLoad={this.handleImageLoaded}

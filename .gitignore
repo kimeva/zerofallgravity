@@ -1,6 +1,3 @@
 .next/
 node_modules/
 *.log 
-static/videos/zfg-bg-video.mp4
-static/videos/zfg-bg-video.ogv
-static/videos/zfg-bg-video.webm

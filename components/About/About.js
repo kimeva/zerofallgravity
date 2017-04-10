@@ -62,6 +62,26 @@ export class About extends Component {
               </div>
             </div>
             <div className="box">
+              {/*<div className="pic pic-kevin">
+              </div>*/}
+              <MemberPic
+                fullSrc={"static/images/zfg/member-kevin@2x.jpg"}
+                thumbnailSrc={"static/images/zfg/member-kevin-sm.jpg"}
+              />
+              <div className="member-details">
+                <span className="member-name">Kevin Wijono</span>
+                <span className="member-role">Keyboards</span>
+                <span>
+                  <a target="_blank" href="https://www.facebook.com/adrian.wijono/">
+                    <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
+                  </a>
+                  <a target="_blank" href="https://www.instagram.com/adriankevinkw/">
+                    <i className="social-media-icon fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div className="box">
               {/*<div className="pic pic-shawn">
               </div>*/}
               <MemberPic
@@ -80,26 +100,6 @@ export class About extends Component {
                   </a>
                   <a target="_blank" href="https://www.youtube.com/user/ShawnWeWicked/">
                     <i className="social-media-icon fa fa-youtube-play" aria-hidden="true"></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-            <div className="box">
-              {/*<div className="pic pic-kevin">
-              </div>*/}
-              <MemberPic
-                fullSrc={"static/images/zfg/member-kevin@2x.jpg"}
-                thumbnailSrc={"static/images/zfg/member-kevin-sm.jpg"}
-              />
-              <div className="member-details">
-                <span className="member-name">Kevin Wijono</span>
-                <span className="member-role">Keyboards</span>
-                <span>
-                  <a target="_blank" href="https://www.facebook.com/adrian.wijono/">
-                    <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
-                  </a>
-                  <a target="_blank" href="https://www.instagram.com/adriankevinkw/">
-                    <i className="social-media-icon fa fa-instagram" aria-hidden="true"></i>
                   </a>
                 </span>
               </div>
@@ -143,6 +143,9 @@ export class About extends Component {
                   </a>
                   <a target="_blank" href="https://www.instagram.com/kimchi.ll/">
                     <i className="social-media-icon fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a target="_blank" href="https://open.spotify.com/user/kime924">
+                    <i className="social-media-icon fa fa-spotify" aria-hidden="true"></i>
                   </a>
                 </span>
               </div>
