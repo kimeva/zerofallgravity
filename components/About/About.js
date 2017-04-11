@@ -130,7 +130,7 @@ export class About extends Component {
                   <a target="_blank" href="https://www.facebook.com/kime924/">
                     <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
-                  <a target="_blank" href="https://www.instagram.com/kimchi.ll/">
+                  <a target="_blank" href="https://www.instagram.com/kime.va/">
                     <i className="social-media-icon fa fa-instagram" aria-hidden="true"></i>
                   </a>
                   <a target="_blank" href="https://open.spotify.com/user/kime924">
@@ -142,7 +142,7 @@ export class About extends Component {
           </div>
         </div>
         <style scoped>
-          @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400');
+          @import url(https://fonts.googleapis.com/css?family=Montserrat:200,400);
         </style>
       </div>
     );

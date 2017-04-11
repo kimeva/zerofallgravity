@@ -30,7 +30,7 @@ export default class extends Component{
         </div>
         <Footer/>
         <style scoped>
-          @import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+          @import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
         </style>
       </div>
     );

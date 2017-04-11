@@ -7,21 +7,22 @@ export class Footer extends Component {
   render() {
     return (
       <div className="footer-container">
+        <script src="https://use.fontawesome.com/0d1ce35ff2.js"></script>
         <style dangerouslySetInnerHTML={{ __html: styles }} />
         <ul className="footer-links">
           <li>
             <a target="_blank" href="https://www.facebook.com/zerofallgravity/">
-              <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
+              &#xfeff;<i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
             </a>
           </li>
           <li>
             <a target="_blank" href="https://www.instagram.com/zerofallgravity/">
-              <i className="social-media-icon fa fa-instagram" aria-hidden="true"></i>
+            	&#xfeff;<i className="social-media-icon fa fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
           <li>
             <a target="_blank" href="https://www.youtube.com/channel/UC3aZoRX6p_L7zUzGBbkLbFg/">
-              <i className="social-media-icon fa fa-youtube-play" aria-hidden="true"></i>
+              &#xfeff;<i className="social-media-icon fa fa-youtube-play" aria-hidden="true"></i>
             </a>
           </li>
         </ul>
@@ -31,7 +32,6 @@ export class Footer extends Component {
         <p>
           Background photo by: <a href="https://unsplash.com/@nathananderson">Nathan Anderson</a>
         </p>
-        <script src="https://use.fontawesome.com/0d1ce35ff2.js"></script>
       </div>
     );
   }
