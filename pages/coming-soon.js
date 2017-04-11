@@ -29,6 +29,9 @@ export default class extends Component{
           <p>// coming soon</p>
         </div>
         <Footer/>
+        <style scoped>
+          @import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+        </style>
       </div>
     );
   }

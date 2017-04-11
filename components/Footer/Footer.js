@@ -5,12 +5,8 @@ import styles from './Footer.scss';
 
 export class Footer extends Component {
   render() {
-    const href = '/';
     return (
       <div className="footer-container">
-        <Head>
-          <link rel="stylesheet" href="static/styles/font-awesome/css/font-awesome.min.css"/>
-        </Head>
         <style dangerouslySetInnerHTML={{ __html: styles }} />
         <ul className="footer-links">
           <li>
@@ -35,6 +31,7 @@ export class Footer extends Component {
         <p>
           Background photo by: <a href="https://unsplash.com/@nathananderson">Nathan Anderson</a>
         </p>
+        <script src="https://use.fontawesome.com/0d1ce35ff2.js"></script>
       </div>
     );
   }

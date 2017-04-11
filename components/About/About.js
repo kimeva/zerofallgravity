@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Head from 'next/head';
-import { Grid, Row, Col } from 'react-bootstrap';
 import { MemberPic } from 'components';
 import styles from './About.scss';
 
@@ -28,7 +27,7 @@ export class About extends Component {
               <div className="member-details">
                 <span className="member-name">Ze Jie Tan</span>
                 <span className="member-role">Vocals</span>
-                <span>
+                <span className="social-media-icons">
                   <a target="_blank" href="https://www.facebook.com/zejie.tan/">
                     <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
@@ -39,8 +38,6 @@ export class About extends Component {
               </div>
             </div>
             <div className="box">
-              { /*<div className="pic pic-likai">
-              </div>*/}
               <MemberPic
                 fullSrc={"static/images/zfg/member-likai@2x.jpg"}
                 thumbnailSrc={"static/images/zfg/member-likai-sm.jpg"}
@@ -48,7 +45,7 @@ export class About extends Component {
               <div className="member-details">
                 <span className="member-name">Ho Li Kai</span>
                 <span className="member-role">Lead Guitars</span>
-                <span>
+                <span className="social-media-icons">
                   <a target="_blank" href="https://www.facebook.com/pursuerofwisdom/">
                     <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
@@ -62,8 +59,6 @@ export class About extends Component {
               </div>
             </div>
             <div className="box">
-              {/*<div className="pic pic-kevin">
-              </div>*/}
               <MemberPic
                 fullSrc={"static/images/zfg/member-kevin@2x.jpg"}
                 thumbnailSrc={"static/images/zfg/member-kevin-sm.jpg"}
@@ -71,7 +66,7 @@ export class About extends Component {
               <div className="member-details">
                 <span className="member-name">Kevin Wijono</span>
                 <span className="member-role">Keyboards</span>
-                <span>
+                <span className="social-media-icons">
                   <a target="_blank" href="https://www.facebook.com/adrian.wijono/">
                     <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
@@ -82,8 +77,6 @@ export class About extends Component {
               </div>
             </div>
             <div className="box">
-              {/*<div className="pic pic-shawn">
-              </div>*/}
               <MemberPic
                 fullSrc={"static/images/zfg/member-shawn@2x.jpg"}
                 thumbnailSrc={"static/images/zfg/member-shawn-sm.jpg"}
@@ -91,7 +84,7 @@ export class About extends Component {
               <div className="member-details">
                 <span className="member-name">Shawn We</span>
                 <span className="member-role">Rhythm Guitars</span>
-                <span>
+                <span className="social-media-icons">
                   <a target="_blank" href="https://www.facebook.com/shawn.we/">
                     <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
@@ -105,8 +98,6 @@ export class About extends Component {
               </div>
             </div>
             <div className="box">
-              {/*<div className="pic pic-denise">
-              </div>*/}
               <MemberPic
                 fullSrc={"static/images/zfg/member-denise@2x.jpg"}
                 thumbnailSrc={"static/images/zfg/member-denise-sm.jpg"}
@@ -114,7 +105,7 @@ export class About extends Component {
               <div className="member-details">
                 <span className="member-name">Denise Yeow</span>
                 <span className="member-role">Drums</span>
-                <span>
+                <span className="social-media-icons">
                   <a target="_blank" href="https://www.facebook.com/deniseyeow.drummer/">
                     <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
@@ -128,8 +119,6 @@ export class About extends Component {
               </div>
             </div>
             <div className="box">
-              {/*<div className="pic pic-kim">
-              </div>*/}
               <MemberPic
                 fullSrc={"static/images/zfg/member-kim@2x.jpg"}
                 thumbnailSrc={"static/images/zfg/member-kim-sm.jpg"}
@@ -137,7 +126,7 @@ export class About extends Component {
               <div className="member-details">
                 <span className="member-name">Kim Evangelista</span>
                 <span className="member-role">Bass</span>
-                <span>
+                <span className="social-media-icons">
                   <a target="_blank" href="https://www.facebook.com/kime924/">
                     <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
@@ -152,6 +141,9 @@ export class About extends Component {
             </div>
           </div>
         </div>
+        <style scoped>
+          @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400');
+        </style>
       </div>
     );
   }
