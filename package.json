@@ -29,7 +29,8 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
-    "now": "^3.1.0"
+    "now": "^3.1.0",
+    "webpack": "^2.3.3"
   },
   "scripts": {
     "dev": "next",

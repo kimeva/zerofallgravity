@@ -1,6 +1,11 @@
+// const backgroundImage = {
+//   full: 'https://source.unsplash.com/9o-VrJSwGuw/1920x1080',
+//   thumbnail: 'https://source.unsplash.com/9o-VrJSwGuw/40x20'
+// };
+
 const backgroundImage = {
-  full: 'https://source.unsplash.com/9o-VrJSwGuw/1920x1080',
-  thumbnail: 'https://source.unsplash.com/9o-VrJSwGuw/40x20'
+  full: 'static/images/space-bg.jpg',
+  thumbnail: 'static/images/space-bg-sm.jpg'
 };
 
 const backgroundVideoImage = {

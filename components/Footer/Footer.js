@@ -7,7 +7,6 @@ export class Footer extends Component {
   render() {
     return (
       <div className="footer-container">
-        <script src="https://use.fontawesome.com/0d1ce35ff2.js"></script>
         <style dangerouslySetInnerHTML={{ __html: styles }} />
         <ul className="footer-links">
           <li>
