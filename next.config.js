@@ -1,5 +1,6 @@
-const path = require('path')
-const glob = require('glob')
+const path = require('path');
+const glob = require('glob');
+var webpack = require('webpack');
 
 module.exports = {
   webpack: (config, { dev }) => {
@@ -30,7 +31,7 @@ module.exports = {
           }
         ]
       }
-    )
+    );
     return config
   }
 }

@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import Head from 'next/head';
-import { Grid, Row, Col } from 'react-bootstrap';
 import styles from './Navbar.scss';
+
+const home = {
+  pathname: '/'
+}
 
 const about = {
   pathname: '/about'
 }
 
 const gigs = {
-  pathname: '/about'
+  pathname: '/coming-soon'
 }
 
 const contact = {
-  pathname: '/about'
+  pathname: 'mailto:zerofallgravity@gmail.com'
 }
 
 export class Navbar extends Component {
   render() {
-    const href = '/';
     return (
       <div className="navbar-container">
-        <Head>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"/>
-        </Head>
         <style dangerouslySetInnerHTML={{ __html: styles }} />
-        <div className="zfg-logo" />
+        <Link href={home}>
+          <a><div className="zfg-logo" /></a>
+        </Link>
         <ul className="navbar-links">
           <li>
             <Link href={about}>
@@ -43,6 +43,9 @@ export class Navbar extends Component {
             </Link>
           </li>
         </ul>
+        <style scoped>
+          @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+        </style>
       </div>
     );
   }
