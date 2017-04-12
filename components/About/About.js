@@ -127,10 +127,10 @@ export class About extends Component {
                 <span className="member-name">Kim Evangelista</span>
                 <span className="member-role">Bass</span>
                 <span className="social-media-icons">
-                  <a target="_blank" href="https://www.facebook.com/kime924/">
+                  <a target="_blank" href="https://www.facebook.com/kimeva.bass/">
                     <i className="social-media-icon fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
-                  <a target="_blank" href="https://www.instagram.com/kime.va/">
+                  <a target="_blank" href="https://www.instagram.com/kimeva.bass/">
                     <i className="social-media-icon fa fa-instagram" aria-hidden="true"></i>
                   </a>
                   <a target="_blank" href="https://open.spotify.com/user/kime924">
