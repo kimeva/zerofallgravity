@@ -1,0 +1,10 @@
+@import 'normalize.css';
+
+html {
+  overflow-y: hidden;
+}
+
+.filler {
+  position: relative;
+  height: calc( 100vh - 330px );
+}

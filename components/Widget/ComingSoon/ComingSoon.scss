@@ -1,14 +1,5 @@
 @import 'normalize.css';
 
-body {
-  background: black;
-}
-
-.filler {
-  position: relative;
-  height: calc( 100vh - 330px );
-}
-
 .coming-soon-panel {
   text-align: center;
   height: calc( 100vh - 330px );
@@ -57,15 +48,3 @@ body {
     margin: 0;
   }
 }
-
-/*
- * Sandbox styles
- * For testing stuff
- */
-
-
-
-/*
- * No more crazy stuff
- * Normal stuff beyond this point
- */

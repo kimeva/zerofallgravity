@@ -1,5 +1,5 @@
 @import 'normalize.css';
-@import '../../static/styles/fontawesome.css';
+@import '../../../static/styles/fontawesome.css';
 
 .navbar-container {
   text-align: center;
@@ -10,41 +10,6 @@
   top: 0;
   left: 0;
   content: '';
-
-  -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 0.5s; /* Firefox < 16 */
-      -ms-animation: fadein 0.5s; /* Internet Explorer */
-       -o-animation: fadein 0.5s; /* Opera < 12.1 */
-          animation: fadein 0.5s;
-  
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  /* Firefox < 16 */
-  @-moz-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-  }
-
-  /* Safari, Chrome and Opera > 12.1 */
-  @-webkit-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-  }
-
-  /* Internet Explorer */
-  @-ms-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-  }
-
-  /* Opera < 12.1 */
-  @-o-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-  }
 
   .zfg-logo {
     margin: 20px auto;
@@ -64,7 +29,7 @@
     only screen and (     -o-min-device-pixel-ratio: 2/1),
     only screen and (        min-device-pixel-ratio: 2),
     only screen and (                min-resolution: 2dppx) {
-      background-image: url('/static/images/zfg/zfg-logo@2x.png');
+      background-image: url('static/images/zfg/zfg-logo@2x.png');
     }
 
     @media 
@@ -73,7 +38,7 @@
     only screen and (     -o-min-device-pixel-ratio: 3/1),
     only screen and (        min-device-pixel-ratio: 3),
     only screen and (                min-resolution: 3dppx) {
-      background-image: url('/static/images/zfg/zfg-logo@3x.png');
+      background-image: url('static/images/zfg/zfg-logo@3x.png');
     }
 
     @media (max-width: 375px) {
@@ -97,8 +62,19 @@
     li {
       float: left;
 
-      a {
+      span {
         display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-bottom: 5px;
+      }
+
+      .active {
+        color: white;
+        border-bottom-color: #fff;
+      }
+
+      a {
         color: #c8c8c8;
         text-decoration: none;
         text-transform: uppercase;
@@ -106,9 +82,13 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 12px;
         font-weight: 200;
-        padding-left: 15px;
-        padding-right: 15px;
-        transition: all 0.3s ease 0s;
+        padding-bottom: 5px;
+        // offset the letter-spacing on right-most character
+        padding-left: 0.4em;
+        transition: border-bottom-color 1s ease;
+        -webkit-transition: border-bottom-color 1s ease;
+        -moz-transition: border-bottom-color 1s ease;
+        border-bottom: 1px solid transparent; 
 
         @media (max-width: 375px) {
           font-size: 10px;
@@ -117,9 +97,12 @@
         }
 
         &:hover {
+          cursor: pointer;
           color: white;
         }
       }
     }
   }
 }
+
+
