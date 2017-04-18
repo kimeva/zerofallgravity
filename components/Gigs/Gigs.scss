@@ -1,0 +1,360 @@
+@import 'normalize.css';
+@import '../../static/styles/fontawesome.css';
+
+.gigs-panel {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+
+  -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 0.5s; /* Firefox < 16 */
+      -ms-animation: fadein 0.5s; /* Internet Explorer */
+       -o-animation: fadein 0.5s; /* Opera < 12.1 */
+          animation: fadein 0.5s;
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Opera < 12.1 */
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @media (max-width: 700px) {
+    width: 400px;
+  }
+
+  @media (max-width: 500px) {
+    width: 350px;
+  }
+
+  @media (max-width: 375px) {
+    width: 250px;
+  }
+
+  .gigs-container {
+    padding: 0 10px;
+    h2, p {
+      color: #c8c8c8;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    h2 {
+      font-weight: 200;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 10pt;
+      font-weight: 200;
+      line-height: 2em;
+    }
+  }
+
+  .gigs-items-container {
+    padding: 15px 0;
+
+    .box {
+      position: relative;
+      float: left;
+      padding: 10px; 
+
+      @media (max-width: 500px) {
+        height: 330px;
+        width: 330px;
+      }
+
+      @media (max-width: 375px) {
+        height: 230px;
+        width: 230px;
+      }
+
+      .gig-details {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 22px;
+        padding-left: 22px;
+        padding-right: 22px;
+
+        span {
+          color: #ffffff;
+          font-family: 'Montserrat', sans-serif;
+          line-height: 1em;
+
+          &::before {
+            content: '\a' ; 
+            white-space: pre;  
+          }
+
+          &::after {
+            z-index: 9999;
+          }
+        }
+
+        .social-media-icons {
+          display: block;
+          height: 14px;
+          transition: all 0.3s ease 0s;
+
+          @media (max-width: 500px) {
+            height: 16px;
+          }
+
+          @media (max-width: 375px) {
+            height: 16px;
+          }
+
+          &::before {
+            content: '';
+          }
+        }
+
+        .gig-title {
+          font-weight: 200;
+          font-size: 9pt;
+          line-height: 1.3em;
+          transition: all 0.3s ease 0s;
+
+          @media (max-width: 500px) {
+            font-size: 11pt;
+          }
+
+          @media (max-width: 375px) {
+            font-size: 11pt;
+          }
+
+          /* These are technically the same, but use both */
+          overflow-wrap: break-word;
+          word-wrap: break-word;
+
+          -ms-word-break: break-all;
+          /* This is the dangerous one in WebKit, as it breaks things wherever */
+          word-break: break-all;
+          /* Instead use this non-standard one: */
+          word-break: break-word;
+
+          /* Adds a hyphen where the word breaks, if supported (No Blink) */
+          -ms-hyphens: auto;
+          -moz-hyphens: auto;
+          -webkit-hyphens: auto;
+          hyphens: auto;
+        }
+
+        .gig-subtitle {
+          font-weight: 400;
+          line-height: 1.3em;
+          text-transform: uppercase;
+          transition: all 0.3s ease 0s;
+
+          @media (max-width: 500px) {
+            font-size: 9pt;
+          }
+
+          @media (max-width: 375px) {
+            font-size: 9pt;
+          }
+        }
+
+        .font {
+          &-size-xs {
+            font-size: 7pt;
+            letter-spacing: 0.2em;
+          }
+          &-size-sm {
+            font-size: 9pt;
+            letter-spacing: 0.2em;
+          }
+          &-size-md {
+            font-size: 13pt;
+            letter-spacing: 0.225em;
+          }
+          &-size-lg {
+            font-size: 17pt;
+            letter-spacing: 0.25em;
+          }
+          &-size-xl {
+            font-size: 20pt;
+            letter-spacing: 0.275em;
+          }
+        }
+
+        a {
+          .social-media-icon {
+            margin-top: 5px;
+            margin-right: 8px;
+            font-size: 14px;
+            color: #fff;
+            transition: all 0.3s ease 0s;
+            height: 14px;
+            content: “\00a0”;
+
+            @media (max-width: 500px) {
+              font-size: 16px;
+              height: 16px;
+            }
+
+            @media (max-width: 375px) {
+              font-size: 16px;
+              height: 16px;
+            }
+          }
+
+          .fa-facebook-official {
+            &:hover {
+              color: #3B5998;
+            }
+          }
+
+          .fa-instagram {
+            &:hover {
+              color: #f77737;
+            }
+          }
+
+          .fa-youtube-play {
+            &:hover {
+              color: #cd201f;
+            }
+          }
+
+          .fa-spotify {
+            &:hover {
+              color: #2ebd59;
+            }
+          }
+        }
+      }
+
+      .pic {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &::after {
+          position: absolute;
+          background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 100%);
+          height: 70%;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          content: "";
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+$base: 50px;
+$padding: 20px;
+
+.width {
+  &-size-1 {
+    width: calc( ( #{$base} * 1) - #{$padding} );
+  }
+  &-size-2 {
+    width: calc( ( #{$base} * 2) - #{$padding} );
+  }
+  &-size-3 {
+    width: calc( ( #{$base} * 3) - #{$padding} );
+  }
+  &-size-4 {
+    width: calc( ( #{$base} * 4) - #{$padding} );
+  }
+  &-size-5 {
+    width: calc( ( #{$base} * 5) - #{$padding} );
+  }
+  &-size-6 {
+    width: calc( ( #{$base} * 6) - #{$padding} );
+  }
+  &-size-7 {
+    width: calc( ( #{$base} * 7) - #{$padding} );
+  }
+  &-size-8 {
+    width: calc( ( #{$base} * 8) - #{$padding} );
+  }
+  &-size-9 {
+    width: calc( ( #{$base} * 9) - #{$padding} );
+  }
+  &-size-10 {
+    width: calc( ( #{$base} * 10) - #{$padding} );
+  }
+  &-size-11 {
+    width: calc( ( #{$base} * 11) - #{$padding} );
+  }
+  &-size-12 {
+    width: calc( ( #{$base} * 12) - #{$padding} );
+  }
+}
+
+.height {
+  &-size-1 {
+    height: calc( ( #{$base} * 1) - #{$padding} );
+  }
+  &-size-2 {
+    height: calc( ( #{$base} * 2) - #{$padding} );
+  }
+  &-size-3 {
+    height: calc( ( #{$base} * 3) - #{$padding} );
+  }
+  &-size-4 {
+    height: calc( ( #{$base} * 4) - #{$padding} );
+  }
+  &-size-5 {
+    height: calc( ( #{$base} * 5) - #{$padding} );
+  }
+  &-size-6 {
+    height: calc( ( #{$base} * 6) - #{$padding} );
+  }
+  &-size-7 {
+    height: calc( ( #{$base} * 7) - #{$padding} );
+  }
+  &-size-8 {
+    height: calc( ( #{$base} * 8) - #{$padding} );
+  }
+  &-size-9 {
+    height: calc( ( #{$base} * 9) - #{$padding} );
+  }
+  &-size-10 {
+    height: calc( ( #{$base} * 10) - #{$padding} );
+  }
+  &-size-11 {
+    height: calc( ( #{$base} * 11) - #{$padding} );
+  }
+  &-size-12 {
+    height: calc( ( #{$base} * 12) - #{$padding} );
+  }
+}

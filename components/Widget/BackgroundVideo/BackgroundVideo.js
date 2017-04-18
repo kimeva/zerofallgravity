@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { MemberPic, ImageLoader } from 'components';
-import { getBackgroundVideoImage } from '../../helper/util';
+import { ImageLoader } from 'components';
+import { getBackgroundVideoImage } from 'helpers/util';
 import 'whatwg-fetch';
 import styles from './BackgroundVideo.scss';
 

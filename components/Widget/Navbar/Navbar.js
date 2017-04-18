@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.scss';
 
@@ -11,7 +11,7 @@ const about = {
 }
 
 const gigs = {
-  pathname: '/coming-soon'
+  pathname: '/gigs'
 }
 
 const contact = {
@@ -19,7 +19,20 @@ const contact = {
 }
 
 export class Navbar extends Component {
+  renderLink = (title, activeLink) => {
+    if (title.toLowerCase() === activeLink.toLowerCase()) {
+      return (
+        <a className="active">{title}</a>
+      );
+    } else {
+      return (
+        <a>{title}</a>
+      );
+    }
+  }
+
   render() {
+    const activeLink = this.props.active ? this.props.active : '';
     return (
       <div className="navbar-container">
         <style dangerouslySetInnerHTML={{ __html: styles }} />
@@ -29,17 +42,17 @@ export class Navbar extends Component {
         <ul className="navbar-links">
           <li>
             <Link href={about}>
-              <a>About</a>
+              <span>{this.renderLink('About', activeLink)}</span>
             </Link>
           </li>
           <li>
             <Link href={gigs}>
-              <a>Gigs</a>
+              <span>{this.renderLink('Gigs', activeLink)}</span>
             </Link>
           </li>
           <li>
             <Link href={contact}>
-              <a>Contact</a>
+              <span><a>Contact</a></span>
             </Link>
           </li>
         </ul>
@@ -50,3 +63,7 @@ export class Navbar extends Component {
     );
   }
 }
+
+Navbar.propTypes = {
+  active: PropTypes.string
+};

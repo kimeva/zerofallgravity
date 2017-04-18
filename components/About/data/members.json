@@ -1,0 +1,83 @@
+[
+  {
+    "id": 0,
+    "name": "Ze Jie Tan",
+    "role": "Vocalist",
+    "socialMedia": [
+      { "type": "facebook", "url": "https://www.facebook.com/zejie.tan/" },
+      { "type": "instagram", "url": "https://www.instagram.com/tan.zejie/" }
+    ],
+    "image": {
+      "fullSrc": "static/images/zfg/member-zejie.jpg",
+      "thumbnailSrc": "static/images/zfg/member-zejie-sm.jpg"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Ho Li Kai",
+    "role": "Lead Guitars",
+    "socialMedia": [
+      { "type": "facebook", "url": "https://www.facebook.com/pursuerofwisdom/" },
+      { "type": "instagram", "url": "https://www.instagram.com/pursuerofwisdom/" },
+      { "type": "youtube", "url": "https://www.youtube.com/user/holislasher/" }
+    ],
+    "image": {
+      "fullSrc": "static/images/zfg/member-likai.jpg",
+      "thumbnailSrc": "static/images/zfg/member-likai-sm.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Kevin Wijono",
+    "role": "Keyboards",
+    "socialMedia": [
+      { "type": "facebook", "url": "https://www.facebook.com/adrian.wijono/" },
+      { "type": "instagram", "url": "https://www.instagram.com/adriankevinkw/" }
+    ],
+    "image": {
+      "fullSrc": "static/images/zfg/member-kevin.jpg",
+      "thumbnailSrc": "static/images/zfg/member-kevin-sm.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Shawn We",
+    "role": "Rhythm Guitars",
+    "socialMedia": [
+      { "type": "facebook", "url": "https://www.facebook.com/shawn.we/" },
+      { "type": "instagram", "url": "https://www.instagram.com/shawnwe/" }
+    ],
+    "image": {
+      "fullSrc": "static/images/zfg/member-shawn.jpg",
+      "thumbnailSrc": "static/images/zfg/member-shawn-sm.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Denise Yeow",
+    "role": "Drums",
+    "socialMedia": [
+      { "type": "facebook", "url": "https://www.facebook.com/deniseyeow.drummer/" },
+      { "type": "instagram", "url": "https://www.instagram.com/denise.yeow/" },
+      { "type": "youtube", "url": "https://www.youtube.com/channel/UCCieI8SLaZcRcE5kHbE8y1A" }
+    ],
+    "image": {
+      "fullSrc": "static/images/zfg/member-denise.jpg",
+      "thumbnailSrc": "static/images/zfg/member-denise-sm.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Kim Evangelista",
+    "role": "Bass",
+    "socialMedia": [
+      { "type": "facebook", "url": "https://www.facebook.com/kimeva.bass/" },
+      { "type": "instagram", "url": "https://www.instagram.com/kimeva.bass/" },
+      { "type": "spotify", "url": "https://open.spotify.com/user/kime924" }
+    ],
+    "image": {
+      "fullSrc": "static/images/zfg/member-kim.jpg",
+      "thumbnailSrc": "static/images/zfg/member-kim-sm.jpg"
+    }
+  }
+]

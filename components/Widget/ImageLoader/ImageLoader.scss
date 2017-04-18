@@ -1,12 +1,13 @@
 @import 'normalize.css';
 
+// use this style if the image to be loaded is going to be a cover image
 .cover {
   position: fixed; 
   top: 0; 
   left: 0;
   bottom: 0;
   right: 0;
-  height: 100%;
+  // height: 100%;
   min-height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -27,10 +28,26 @@
   }
 }
 
-.thumbnail {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+// use this style if the image to be loaded is a non-cover image
+.picture {
+  position: relative; 
+  // height: 100%;
+  // width: 100%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 100%);
+    height: 70%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    content: '';
+  }
 }
 
 .image {
