@@ -3,6 +3,8 @@ export { Layout } from './Layout/Layout';
 export { Home } from './Home/Home';
 export { About } from './About/About';
 export { MemberItem } from './About/MemberItem/MemberItem';
+export { MemberProfile } from './MemberProfile/MemberProfile';
+export { MemberDetails } from './MemberProfile/MemberDetails/MemberDetails';
 export { Gigs } from './Gigs/Gigs';
 export { GigItem } from './Gigs/GigItem/GigItem';
 

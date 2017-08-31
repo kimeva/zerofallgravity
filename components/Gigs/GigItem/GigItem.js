@@ -30,7 +30,7 @@ export class GigItem extends Component {
       case 'rectangle-half': {
         boxWidth=getBoxWidthClass(6);
         boxHeight=getBoxHeightClass(4);
-        titleFontSize = getFontSizeClass('md');
+        titleFontSize = getFontSizeClass('sm');
         subtitleFontSize = getFontSizeClass('xs');
         break;
       }
