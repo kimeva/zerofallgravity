@@ -9,12 +9,6 @@ Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
-/**
- * Meta header component
- * - you can add any external script here
- * - or external assets such as font awesome, or google font
- * - in this example, we uses NProgress for all pages
- */
 export class Meta extends Component {
   componentDidMount() {
     this.loadFonts();
