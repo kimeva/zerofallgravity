@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ImageLoader } from 'components';
-import { getBackgroundVideoImage } from 'helpers/util';
+import { getBackgroundImage } from 'helpers/util';
 import 'whatwg-fetch';
 import styles from './BackgroundVideo.scss';
 
@@ -35,7 +35,7 @@ export class BackgroundVideo extends Component {
   }
 
   render() {
-    const { full, thumbnail } = getBackgroundVideoImage();
+    const { full, thumbnail } = getBackgroundImage(false);
     let bgVideo = null;
     if (this.state.error) {
       bgVideo = (

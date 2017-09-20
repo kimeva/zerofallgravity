@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { MemberItem, ImageLoader } from 'components';
 import { getImageSrc } from '../../helpers/util';
 import styles from './MemberProfile.scss';
