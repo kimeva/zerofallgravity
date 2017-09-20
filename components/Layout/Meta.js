@@ -47,7 +47,7 @@ export class Meta extends Component {
           <link rel="icon" type="image/png" href="/static/images/zfg/zfg-favicon.png" sizes="16x16"/>
           <link rel="icon" type="image/png" href="/static/images/zfg/zfg-favicon@2x.png" sizes="32x32"/>
           <link rel="icon" type="image/png" href="/static/images/zfg/zfg-favicon@3x.png" sizes="48x48"/>
-          <link rel="rel" as="style" href="/static/styles/font-awesome/css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
+          <link rel="preload" as="style" href="/static/styles/font-awesome/css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
         </Head>
         <style jsx global>{`
           body { 

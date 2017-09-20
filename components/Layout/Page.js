@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Theme from './Theme';
-import { Footer, ImageLoader, Content, Meta, TopNav, BottomNav } from 'components';
+import { ImageLoader, Content, Meta, TopNav, BottomNav, Footer } from 'components';
 import { getBackgroundImage } from '../../helpers/util';
 
 class Page extends Component {
@@ -37,7 +37,7 @@ class Page extends Component {
             {this.props.children}
           </Content>
           <BottomNav active={this.props.title}/>
-          <Footer/>
+          <Footer />
         </div>
       </Theme>
     );
