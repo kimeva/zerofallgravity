@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { Layout, Home } from 'components';
-import styles from 'styles/index.scss';
+import { Page, BackgroundVideo, HomeFiller } from 'components';
 
 export default class extends Component {
-  render() {
+  render () {
     return (
-      <Layout isIndexPage>
-        <Home/>
-      </Layout>
+      <Page title='Home' isIndexPage>
+        <div>
+          <BackgroundVideo />
+          <HomeFiller />
+        </div>
+      </Page>
     );
   }
 }

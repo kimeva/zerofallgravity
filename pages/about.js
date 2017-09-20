@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Layout, About } from 'components';
 import isRetina from 'is-retina';
-import styles from 'styles/index.scss';
+import { Page, About } from 'components';
 
-export default class extends Component{
-  render() {
+export default class extends Component {
+  render () {
     return (
-      <Layout title='About' >
+      <Page title='About' >
         <About isRetina={isRetina()} />
-      </Layout>
+      </Page>
     );
   }
 }

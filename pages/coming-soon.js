@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { Layout, ComingSoon } from 'components';
-import styles from 'styles/index.scss';
+import { Page, ComingSoonPanel } from 'components';
 
-export default class extends Component{
-  render() {
+export default class extends Component {
+  render () {
     return (
-      <Layout title='Coming Soon'>
-        <ComingSoon/>
-      </Layout>
+      <Page title='Gigs'>
+        <ComingSoonPanel>
+          <p>// coming soon</p>
+        </ComingSoonPanel>
+      </Page>
     );
   }
 }

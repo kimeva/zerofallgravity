@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 import styles from './Navbar.scss';
 
@@ -11,7 +12,7 @@ const about = {
 }
 
 const gigs = {
-  pathname: '/gigs'
+  pathname: '/coming-soon'
 }
 
 const contact = {
@@ -51,9 +52,7 @@ export class Navbar extends Component {
             </Link>
           </li>
           <li>
-            <Link href={contact}>
-              <span><a>Contact</a></span>
-            </Link>
+            <span><a href={contact.pathname}>Contact</a></span>
           </li>
         </ul>
         <style scoped>

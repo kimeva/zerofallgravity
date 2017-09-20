@@ -52,7 +52,7 @@ export default class extends Component{
   }
 
   render() {
-    const { full, thumbnail } = getBackgroundImage();
+    const { full, thumbnail } = getBackgroundImage(false);
 
     if (this.state.loaded) {
       console.log('pics : ', this.state.pics);

@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { ImageLoader } from 'components';
 import { getImageAlt, getBoxWidthClass, getBoxHeightClass, getFontSizeClass } from 'helpers/util';
 import styles from './GigItem.scss';

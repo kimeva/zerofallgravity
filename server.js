@@ -1,7 +1,7 @@
 const express = require('express');
 const next = require('next');
 const LRUCache = require('lru-cache');
-const { minify } = require('html-minifier');
+var minify = require('html-minifier').minify;
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
@@ -26,7 +26,7 @@ app.prepare()
   })
 
   server.get('/gigs', (req, res) => {
-    renderAndCache(req, res, '/gigs');
+    renderAndCache(req, res, '/coming-soon');
   })
 
   server.get('/coming-soon', (req, res) => {
@@ -37,9 +37,9 @@ app.prepare()
     return handle(req, res);
   })
 
-  server.listen(3000, (err) => {
+  server.listen(3333, (err) => {
     if (err) throw err
-    console.log('> Ready on http://localhost:3000');
+    console.log('> Ready on http://localhost:3333');
   })
 })
 

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Layout, Gigs } from 'components';
-import styles from 'styles/index.scss';
+import { Page, Gigs } from 'components';
 
-export default class extends Component{
-  render() {
+export default class extends Component {
+  render () {
     return (
-      <Layout title='Gigs' >
-        <Gigs/>
-      </Layout>
+      <Page title='About' >
+        <Gigs />
+      </Page>
     );
   }
 }
+

@@ -1,13 +1,13 @@
-@import 'normalize.css';
+import styled from 'styled-components';
 
-.coming-soon-panel {
+const ComingSoonPanel = styled.div`
   text-align: center;
-  height: calc( 100vh - 330px );
+  height: calc( 100vh - 260px );
 
   -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 0.5s; /* Firefox < 16 */
+    -moz-animation: fadein 0.5s; /* Firefox < 16 */
       -ms-animation: fadein 0.5s; /* Internet Explorer */
-       -o-animation: fadein 0.5s; /* Opera < 12.1 */
+      -o-animation: fadein 0.5s; /* Opera < 12.1 */
           animation: fadein 0.5s;
   
   @keyframes fadein {
@@ -44,7 +44,11 @@
     font-family: 'Cutive Mono', monospace;
     font-size: 12px;
     letter-spacing: 0.1em;
-    padding: 0;
+    padding: 20px 0 0 0;
     margin: 0;
   }
+`;
+
+export {
+  ComingSoonPanel
 }
