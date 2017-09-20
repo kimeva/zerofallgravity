@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 import Router from 'next/router';
 
+// Attach analytics into every page wrapped by this component
 export default (WrappedComponent) => (
   class AnalyticsWrapper extends Component {
     constructor (props) {
