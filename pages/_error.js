@@ -40,7 +40,7 @@ const ErrorContainer = styled.div`
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1.5em;
     white-space: pre-line;
 
@@ -144,6 +144,7 @@ const ErrorButton = styled.div`
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
+  transition: background 0.25s ease-out, color 0.25s ease-out;
 
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1s; /* Firefox < 16 */
