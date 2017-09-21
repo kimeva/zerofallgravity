@@ -90,6 +90,10 @@ const SocialMediaLinks = styled.div`
     align-items: center;
     transition: background 0.1s ease-in;
 
+    @media only screen and (max-width: ${props => props.theme.size['mobile-width-425']}px) {
+      height: 45px;
+    }
+
     &:hover {
       cursor: pointer;
       background: #324059;
@@ -157,6 +161,10 @@ const LeftMobileButtons = styled.div`
     display: block;
     background: ${props => props.isToggled ? '#324059' : 'transparent' };
   }
+
+  @media only screen and (max-width: ${props => props.theme.size['mobile-width-425']}px) {
+    height: 45px;
+  }
 `;
 
 const Button = styled.div`
@@ -209,6 +217,10 @@ const LeftButton = styled.a`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: ${props => props.theme.size['mobile-width-425']}px) {
+    height: 45px;
+  }
 `;
 
 const RightButtons = styled.div`
@@ -228,6 +240,10 @@ const RightButtons = styled.div`
     padding-left: 0;
   }
 
+  @media only screen and (max-width: ${props => props.theme.size['mobile-width-425']}px) {
+    height: 45px;
+  }
+
   &:hover {
     cursor: pointer;
   }
@@ -243,6 +259,10 @@ const RightButtons = styled.div`
     align-self: flex-end;
     color: #ffffff;
     border-left: 1px transparent #262626;
+
+    @media only screen and (max-width: ${props => props.theme.size['mobile-width-425']}px) {
+      height: 45px;
+    }
     
     i {
       font-size: 18px;
@@ -352,7 +372,7 @@ export class TopNav extends Component {
                 </a>
               </Button>
             </LeftMobileButtons>
-            <Link href="/">
+            <Link prefetch href="/">
               <a><Brand/></a>
             </Link>
             <RightButtons>

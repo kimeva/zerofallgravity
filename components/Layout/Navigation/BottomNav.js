@@ -32,7 +32,7 @@ const NavLink = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 3px;
   color: ${props => props.isActive ? '#ffffff' : '#808080'};
   font-family: 'Montserrat', sans-serif;
@@ -41,14 +41,19 @@ const NavLink = styled.a`
   line-height: 16px;
   transition: color 0.1s ease-in;
 
+  @media only screen and (max-width: ${props => props.theme.size['mobile-width-425']}px) {
+    padding-top: 5px;
+  }
+
   &:hover {
     color: #ffffff;
     cursor: pointer;
   }
   
   i {
+    height: 21px;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 20px;
   }
 `;
 

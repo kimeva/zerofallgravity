@@ -47,13 +47,13 @@ export class Meta extends Component {
           <link rel="icon" type="image/png" href="/static/images/zfg/zfg-favicon.png" sizes="16x16"/>
           <link rel="icon" type="image/png" href="/static/images/zfg/zfg-favicon@2x.png" sizes="32x32"/>
           <link rel="icon" type="image/png" href="/static/images/zfg/zfg-favicon@3x.png" sizes="48x48"/>
-          <link rel="preload" href="/static/styles/font-awesome/css/font-awesome.min.css" as="style"/>
+          <script async src="https://use.fontawesome.com/b1d35f751c.js"/>
         </Head>
         <style jsx global>{`
           body { 
             background: #000000;
           }
-    
+
           #nprogress {
             pointer-events: none;
           }
