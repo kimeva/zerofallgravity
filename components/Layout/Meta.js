@@ -44,6 +44,7 @@ export class Meta extends Component {
             content='width=device-width,minimum-scale=1,initial-scale=1'
           />
           <meta httpEquiv='X-UA-Compatible'/>
+          <meta name="google-site-verification" content="RoGqxG3Qe2F992Ad2PHaup5M4KGtICbdTlYLbniHIVM" />
           <link rel="icon" type="image/png" href="/static/images/zfg/zfg-favicon.png" sizes="16x16"/>
           <link rel="icon" type="image/png" href="/static/images/zfg/zfg-favicon@2x.png" sizes="32x32"/>
           <link rel="icon" type="image/png" href="/static/images/zfg/zfg-favicon@3x.png" sizes="48x48"/>
