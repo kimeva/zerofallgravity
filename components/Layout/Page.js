@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Theme from './Theme';
-import { ImageLoader, Content, Meta, TopNav, BottomNav, Footer } from 'components';
+import { ImageLoader, Content, Meta, TopNav, BottomNav, Footer, Overlay } from 'components';
 import { getBackgroundImage } from '../../helpers/util';
 
 class Page extends Component {
@@ -24,12 +24,13 @@ class Page extends Component {
   }
 
   render() {
-    const title = this.props.title ? `Zero Fall Gravity | ${this.props.title}` : 'Zero Fall Gravity';
+    const title = this.props.title ? `${this.props.title} | Zero Fall Gravity` : 'Zero Fall Gravity';
     const isIndexPage = this.props.isIndexPage ? this.props.isIndexPage : false;
 
     return (
       <Theme>
         <div>
+          <Overlay />
           <Meta title={title} />
           <TopNav active={this.props.title} isIndexPage={isIndexPage} />
           {this.renderBgImage(isIndexPage)}

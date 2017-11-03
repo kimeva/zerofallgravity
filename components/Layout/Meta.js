@@ -16,7 +16,7 @@ export class Meta extends Component {
 
   loadFonts = () => {
     const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css?family=Cutive|Montserrat:100,200,400';
+    link.href = 'https://fonts.googleapis.com/css?family=Cutive|Montserrat:100,200,400,600';
     link.rel = 'stylesheet';
   
     document.head.appendChild(link);
@@ -53,6 +53,8 @@ export class Meta extends Component {
         <style jsx global>{`
           body { 
             background: #000000;
+            margin: 0;
+            padding: 0;
           }
 
           #nprogress {

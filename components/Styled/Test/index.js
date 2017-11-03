@@ -53,7 +53,7 @@ const Brand = styled.div`
   only screen and (     -o-min-device-pixel-ratio: 2/1),
   only screen and (        min-device-pixel-ratio: 2),
   only screen and (                min-resolution: 2dppx) {
-    background-image: url('static/images/zfg/zfg-logo@2x.png');
+    background-image: url('/static/images/zfg/zfg-logo@2x.png');
   }
 
   @media 
@@ -62,7 +62,7 @@ const Brand = styled.div`
   only screen and (     -o-min-device-pixel-ratio: 3/1),
   only screen and (        min-device-pixel-ratio: 3),
   only screen and (                min-resolution: 3dppx) {
-    background-image: url('static/images/zfg/zfg-logo@3x.png');
+    background-image: url('/static/images/zfg/zfg-logo@3x.png');
   }
 
   @media only screen and (max-width: ${props => props.theme.size['mobile-width-425']}px) {

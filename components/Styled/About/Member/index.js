@@ -5,7 +5,15 @@ const MemberContainer = styled.div`
   float: left;
   height: 180px;
   width: 180px;
-  padding: 10px; 
+  padding: 10px;
+  outline: transparent solid 2px;
+  transition: outline 0.25s ease-out;
+  outline-offset: -10px;
+
+  &:hover {
+    cursor: pointer;
+    outline: rgba(255, 255, 255, 0.7) solid 2px;
+  }
 
   @media (max-width: 500px) {
     height: 330px;
@@ -23,7 +31,7 @@ const MemberDetails = styled.div`
   bottom: 0;
   left: 0;
   padding-left: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
 
@@ -129,10 +137,19 @@ const MemberSocialMedia = styled.span`
 
     .fa-spotify {
       &:hover {
-        color: #2ebd59;
+        color: #1db954;
       }
     }
   }
+`;
+
+const Overlay = styled.div`
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 100%);
 `;
 
 export {
@@ -140,5 +157,6 @@ export {
   MemberDetails,
   MemberName,
   MemberRole,
-  MemberSocialMedia
+  MemberSocialMedia,
+  Overlay
 };

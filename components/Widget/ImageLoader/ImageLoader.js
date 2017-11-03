@@ -1,15 +1,55 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styles from './ImageLoader.scss';
+import styled from 'styled-components';
 import { preventRightClick } from 'helpers/util';
+
+const Loader = styled.div`
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+`;
+
+const Cover = styled.div`
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: -9000;  
+`;
+
+const Picture = styled.div`
+  position: relative; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+`;
+
+const ImageContainer = styled.img`
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in, 1s -webkit-filter ease-in;
+`;
 
 export class ImageLoader extends Component {
   constructor(props) {
     super(props);
     this.state = {
       loaded: false,
-      error: false,
-      imgClassName: 'image'
+      error: false
     };
   }
 
@@ -18,15 +58,13 @@ export class ImageLoader extends Component {
 
     img.onload = () => {
       this.setState({
-        loaded: true,
-        imgClassName: 'image image-loaded'
+        loaded: true
       });
     };
 
     img.onerror = () => {
       this.setState({
-        error: true,
-        imgClassName: 'image'
+        error: true
       });
     };
   
@@ -34,23 +72,16 @@ export class ImageLoader extends Component {
   }
 
   renderImg = (fullSrc, thumbnailSrc, imgAlt) => {
-    const img = (this.state.error || !this.state.loaded) ?
-      <img
-        className="image"
-        ref="img"
-        alt={imgAlt}
-        src={thumbnailSrc}
-      />
-    :
-      <img
-        className="image image-loaded"
+    return (
+      <ImageContainer
+        style={{
+          opacity: (this.state.error || !this.state.loaded) ? 0 : 1
+        }}
         ref="img"
         alt={imgAlt}
         src={fullSrc}
       />
-    ;
-
-    return img;
+    )
   }
 
   render() {
@@ -64,21 +95,31 @@ export class ImageLoader extends Component {
     const imgAlt = this.props.imgAlt ? this.props.imgAlt : 'Zero Fall Gravity';
     const isCover = this.props.isCover ? this.props.isCover : false;
 
-    return (
-      <div
-        className={isCover ? "cover" : "picture"}
-        style={{
-          background: `url(${thumbnailSrc}) no-repeat center center fixed`,
-          backgroundSize: '100% 100%',
-          width: imgWidth,
-          height: imgHeight
-        }}
-        onContextMenu={preventRightClick}
-      >
-        <style dangerouslySetInnerHTML={{ __html: styles }} />
-        {this.renderImg(fullSrc, thumbnailSrc, imgAlt)}
-      </div>
-    ); 
+    const bgStyle = {
+      background: `url(${thumbnailSrc}) no-repeat center center/cover`,
+      width: imgWidth,
+      height: imgHeight,
+      filter: (this.state.error || !this.state.loaded) ? 'blur(10px)' : 'blur(0)'
+    };
+
+    return isCover ? (
+      <Loader>
+        <Cover
+          style={bgStyle}
+          onContextMenu={preventRightClick}
+        >
+          {this.renderImg(fullSrc, thumbnailSrc, imgAlt)}
+        </Cover>
+      </Loader>) : (
+      <Loader>
+        <Picture
+          style={bgStyle}
+          onContextMenu={preventRightClick}
+        >
+          {this.renderImg(fullSrc, thumbnailSrc, imgAlt)}
+        </Picture>
+      </Loader>
+    );
   }
 }
 

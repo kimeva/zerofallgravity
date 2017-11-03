@@ -4,6 +4,7 @@ const AboutSection = styled.div`
   position: relative;
   width: 600px;
   margin: 0 auto;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
 

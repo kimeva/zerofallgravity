@@ -15,7 +15,7 @@ export class BackgroundVideo extends Component {
   }
 
   componentDidMount() {
-    const url = 'static/videos/zfg-bg-video.mp4';
+    const url = '/static/videos/zfg-bg-video.mp4';
     fetch(url)
     .then((response) => {
       if (response.status >= 400) {
@@ -44,7 +44,7 @@ export class BackgroundVideo extends Component {
           preload="auto"
           className={this.state.vidClassName}
         >
-          <source src="static/videos/zfg-bg-video.mp4" type="video/mp4"></source>
+          <source src="/static/videos/zfg-bg-video.mp4" type="video/mp4"></source>
           Your browser does not support the video tag.
         </video>
       );
@@ -55,7 +55,7 @@ export class BackgroundVideo extends Component {
           preload="auto"
           className={this.state.vidClassName}
         >
-          <source src="static/videos/zfg-bg-video.mp4" type="video/mp4"></source>
+          <source src="/static/videos/zfg-bg-video.mp4" type="video/mp4"></source>
           Your browser does not support the video tag.
         </video>
       );
@@ -66,7 +66,7 @@ export class BackgroundVideo extends Component {
           preload="auto"
           className={this.state.vidClassName}
         >
-          <source src="static/videos/zfg-bg-video.mp4" type="video/mp4"></source>
+          <source src="/static/videos/zfg-bg-video.mp4" type="video/mp4"></source>
           Your browser does not support the video tag.
         </video>
       );

@@ -1,6 +1,7 @@
 // Pages
 export { Home } from './Page/Home/Home';
 export { About } from './Page/About/About';
+export { Member } from './Page/Member/Member';
 
 // Non-refactored
 export { Gigs } from './Gigs/Gigs';
@@ -24,7 +25,8 @@ export { Footer } from './Layout/Footer';
 
 // Styles
 export {
-  Content
+  Content,
+  Overlay
 } from './Styled/Layout';
 
 export {

@@ -1,8 +1,12 @@
 [
   {
     "id": 0,
-    "name": "Ze Jie Tan",
-    "role": "Vocalist",
+    "name": {
+      "first": "Ze Jie",
+      "last": "Tan",
+      "full": "Ze Jie Tan"
+    },
+    "role": "Vocals",
     "socialMedia": [
       { "type": "facebook", "url": "https://www.facebook.com/zejie.tan/" },
       { "type": "instagram", "url": "https://www.instagram.com/tan.zejie/" }
@@ -10,41 +14,123 @@
     "images": {
       "profile": {
         "1x": {
-          "fullSrc": "static/images/zfg/member-zejie.jpg",
-          "thumbnailSrc": "static/images/zfg/member-zejie-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-zejie.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-zejie-sm.jpg"
         },
         "2x": {
-          "fullSrc": "static/images/zfg/member-zejie@2x.jpg",
-          "thumbnailSrc": "static/images/zfg/member-zejie-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-zejie@2x.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-zejie-sm.jpg"
         }
-      }
+      },
+      "cover": {
+        "fullSrc": "/static/images/zfg/profile/zejie/profile-zejie-cover.jpg",
+        "thumbnailSrc": "/static/images/zfg/profile/zejie/profile-zejie-cover-sm.jpg"
+      },
+      "gallery": [
+        {
+          "fullSrc": "/static/images/zfg/profile/zejie/profile-zejie-1.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/zejie/profile-zejie-1-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/zejie/profile-zejie-2.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/zejie/profile-zejie-2-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/zejie/profile-zejie-3.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/zejie/profile-zejie-3-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/zejie/profile-zejie-4.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/zejie/profile-zejie-4-sm.jpg"
+        }
+      ]
+    },
+    "details": {
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, orci nec eleifend consequat, dolor leo tempor dolor, id viverra lacus ligula id nisl. Aenean vel lorem id nisi aliquam tempus vitae a orci. Aliquam consectetur interdum lorem, vestibulum luctus nunc hendrerit commodo.",
+      "bands": [
+        "Iron Maiden",
+        "Metallica",
+        "Megadeth",
+        "NOFX"
+      ],
+      "influences": [
+        "Steve Harris",
+        "Cliff Burton",
+        "David Ellefson"
+      ],
+      "gear": "Dean Metalman ML"
     }
   },
   {
     "id": 1,
-    "name": "Ho Li Kai",
+    "name": {
+      "first": "Li Kai",
+      "last": "Ho",
+      "full": "Ho Li Kai"
+    },
     "role": "Lead Guitars",
     "socialMedia": [
       { "type": "facebook", "url": "https://www.facebook.com/pursuerofwisdom/" },
-      { "type": "instagram", "url": "https://www.instagram.com/pursuerofwisdom/" },
+      { "type": "instagram", "url": "https://www.instagram.com/holikai.guitar/" },
       { "type": "youtube", "url": "https://www.youtube.com/user/holislasher/" }
     ],
     "images": {
       "profile": {
         "1x": {
-          "fullSrc": "static/images/zfg/member-likai.jpg",
-          "thumbnailSrc": "static/images/zfg/member-likai-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-likai.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-likai-sm.jpg"
         },
         "2x": {
-          "fullSrc": "static/images/zfg/member-likai@2x.jpg",
-          "thumbnailSrc": "static/images/zfg/member-likai-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-likai@2x.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-likai-sm.jpg"
         }
-      }
+      },
+      "cover": {
+        "fullSrc": "/static/images/zfg/profile/likai/profile-likai-cover.jpg",
+        "thumbnailSrc": "/static/images/zfg/profile/likai/profile-likai-cover-sm.jpg"
+      },
+      "gallery": [
+        {
+          "fullSrc": "/static/images/zfg/profile/likai/profile-likai-1.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/likai/profile-likai-1-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/likai/profile-likai-2.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/likai/profile-likai-2-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/likai/profile-likai-3.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/likai/profile-likai-3-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/likai/profile-likai-4.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/likai/profile-likai-4-sm.jpg"
+        }
+      ]
+    },
+    "details": {
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, orci nec eleifend consequat, dolor leo tempor dolor, id viverra lacus ligula id nisl. Aenean vel lorem id nisi aliquam tempus vitae a orci. Aliquam consectetur interdum lorem, vestibulum luctus nunc hendrerit commodo.",
+      "bands": [
+        "Iron Maiden",
+        "Metallica",
+        "Megadeth",
+        "NOFX"
+      ],
+      "influences": [
+        "Steve Harris",
+        "Cliff Burton",
+        "David Ellefson"
+      ],
+      "gear": "Dean Metalman ML"
     }
   },
   {
     "id": 2,
-    "name": "Kevin Wijono",
+    "name": {
+      "first": "Kevin",
+      "last": "Wijono",
+      "full": "Kevin Wijono"
+    },
     "role": "Keyboards",
     "socialMedia": [
       { "type": "facebook", "url": "https://www.facebook.com/adrian.wijono/" },
@@ -53,19 +139,60 @@
     "images": {
       "profile": {
         "1x": {
-          "fullSrc": "static/images/zfg/member-kevin.jpg",
-          "thumbnailSrc": "static/images/zfg/member-kevin-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-kevin.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-kevin-sm.jpg"
         },
         "2x": {
-          "fullSrc": "static/images/zfg/member-kevin@2x.jpg",
-          "thumbnailSrc": "static/images/zfg/member-kevin-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-kevin@2x.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-kevin-sm.jpg"
         }
-      }
+      },
+      "cover": {
+        "fullSrc": "/static/images/zfg/profile/kevin/profile-kevin-cover.jpg",
+        "thumbnailSrc": "/static/images/zfg/profile/kevin/profile-kevin-cover-sm.jpg"
+      },
+      "gallery": [
+        {
+          "fullSrc": "/static/images/zfg/profile/kevin/profile-kevin-1.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/kevin/profile-kevin-1-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/kevin/profile-kevin-2.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/kevin/profile-kevin-2-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/kevin/profile-kevin-3.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/kevin/profile-kevin-3-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/kevin/profile-kevin-4.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/kevin/profile-kevin-4-sm.jpg"
+        }
+      ]
+    },
+    "details": {
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, orci nec eleifend consequat, dolor leo tempor dolor, id viverra lacus ligula id nisl. Aenean vel lorem id nisi aliquam tempus vitae a orci. Aliquam consectetur interdum lorem, vestibulum luctus nunc hendrerit commodo.",
+      "bands": [
+        "Iron Maiden",
+        "Metallica",
+        "Megadeth",
+        "NOFX"
+      ],
+      "influences": [
+        "Steve Harris",
+        "Cliff Burton",
+        "David Ellefson"
+      ],
+      "gear": "Dean Metalman ML"
     }
   },
   {
     "id": 3,
-    "name": "Shawn We",
+    "name": {
+      "first": "Shawn",
+      "last": "We",
+      "full": "Shawn We"
+    },
     "role": "Rhythm Guitars",
     "socialMedia": [
       { "type": "facebook", "url": "https://www.facebook.com/shawn.we/" },
@@ -74,19 +201,60 @@
     "images": {
       "profile": {
         "1x": {
-          "fullSrc": "static/images/zfg/member-shawn.jpg",
-          "thumbnailSrc": "static/images/zfg/member-shawn-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-shawn.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-shawn-sm.jpg"
         },
         "2x": {
-          "fullSrc": "static/images/zfg/member-shawn@2x.jpg",
-          "thumbnailSrc": "static/images/zfg/member-shawn-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-shawn@2x.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-shawn-sm.jpg"
         }
-      }
+      },
+      "cover": {
+        "fullSrc": "/static/images/zfg/profile/shawn/profile-shawn-cover.jpg",
+        "thumbnailSrc": "/static/images/zfg/profile/shawn/profile-shawn-cover-sm.jpg"
+      },
+      "gallery": [
+        {
+          "fullSrc": "/static/images/zfg/profile/shawn/profile-shawn-1.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/shawn/profile-shawn-1-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/shawn/profile-shawn-2.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/shawn/profile-shawn-2-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/shawn/profile-shawn-3.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/shawn/profile-shawn-3-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/shawn/profile-shawn-4.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/shawn/profile-shawn-4-sm.jpg"
+        }
+      ]
+    },
+    "details": {
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, orci nec eleifend consequat, dolor leo tempor dolor, id viverra lacus ligula id nisl. Aenean vel lorem id nisi aliquam tempus vitae a orci. Aliquam consectetur interdum lorem, vestibulum luctus nunc hendrerit commodo.",
+      "bands": [
+        "Iron Maiden",
+        "Metallica",
+        "Megadeth",
+        "NOFX"
+      ],
+      "influences": [
+        "Steve Harris",
+        "Cliff Burton",
+        "David Ellefson"
+      ],
+      "gear": "Dean Metalman ML"
     }
   },
   {
     "id": 4,
-    "name": "Denise Yeow",
+    "name": {
+      "first": "Denise",
+      "last": "Yeow",
+      "full": "Denise Yeow"
+    },
     "role": "Drums",
     "socialMedia": [
       { "type": "facebook", "url": "https://www.facebook.com/deniseyeow.drummer/" },
@@ -96,19 +264,60 @@
     "images": {
       "profile": {
         "1x": {
-          "fullSrc": "static/images/zfg/member-denise.jpg",
-          "thumbnailSrc": "static/images/zfg/member-denise-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-denise.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-denise-sm.jpg"
         },
         "2x": {
-          "fullSrc": "static/images/zfg/member-denise@2x.jpg",
-          "thumbnailSrc": "static/images/zfg/member-denise-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-denise@2x.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-denise-sm.jpg"
         }
-      }
+      },
+      "cover": {
+        "fullSrc": "/static/images/zfg/profile/denise/profile-denise-cover.jpg",
+        "thumbnailSrc": "/static/images/zfg/profile/denise/profile-denise-cover-sm.jpg"
+      },
+      "gallery": [
+        {
+          "fullSrc": "/static/images/zfg/profile/denise/profile-denise-1.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/denise/profile-denise-1-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/denise/profile-denise-2.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/denise/profile-denise-2-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/denise/profile-denise-3.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/denise/profile-denise-3-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/denise/profile-denise-4.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/denise/profile-denise-4-sm.jpg"
+        }
+      ]
+    },
+    "details": {
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, orci nec eleifend consequat, dolor leo tempor dolor, id viverra lacus ligula id nisl. Aenean vel lorem id nisi aliquam tempus vitae a orci. Aliquam consectetur interdum lorem, vestibulum luctus nunc hendrerit commodo.",
+      "bands": [
+        "Iron Maiden",
+        "Metallica",
+        "Megadeth",
+        "NOFX"
+      ],
+      "influences": [
+        "Steve Harris",
+        "Cliff Burton",
+        "David Ellefson"
+      ],
+      "gear": "Dean Metalman ML"
     }
   },
   {
     "id": 5,
-    "name": "Kim Evangelista",
+    "name": {
+      "first": "Kim",
+      "last": "Evangelista",
+      "full": "Kim Evangelista"
+    },
     "role": "Bass",
     "socialMedia": [
       { "type": "facebook", "url": "https://www.facebook.com/kimeva.bass/" },
@@ -118,14 +327,51 @@
     "images": {
       "profile": {
         "1x": {
-          "fullSrc": "static/images/zfg/member-kim.jpg",
-          "thumbnailSrc": "static/images/zfg/member-kim-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-kim.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-kim-sm.jpg"
         },
         "2x": {
-          "fullSrc": "static/images/zfg/member-kim@2x.jpg",
-          "thumbnailSrc": "static/images/zfg/member-kim-sm.jpg"
+          "fullSrc": "/static/images/zfg/member-kim@2x.jpg",
+          "thumbnailSrc": "/static/images/zfg/member-kim-sm.jpg"
         }
-      }
+      },
+      "cover": {
+        "fullSrc": "/static/images/zfg/profile/kim/profile-kim-cover.jpg",
+        "thumbnailSrc": "/static/images/zfg/profile/kim/profile-kim-cover-sm.jpg"
+      },
+      "gallery": [
+        {
+          "fullSrc": "/static/images/zfg/profile/kim/profile-kim-4.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/kim/profile-kim-4-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/kim/profile-kim-3.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/kim/profile-kim-3-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/kim/profile-kim-1.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/kim/profile-kim-1-sm.jpg"
+        },
+        {
+          "fullSrc": "/static/images/zfg/profile/kim/profile-kim-2.jpg",
+          "thumbnailSrc": "/static/images/zfg/profile/kim/profile-kim-2-sm.jpg"
+        }
+      ]
+    },
+    "details": {
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, orci nec eleifend consequat, dolor leo tempor dolor, id viverra lacus ligula id nisl. Aenean vel lorem id nisi aliquam tempus vitae a orci. Aliquam consectetur interdum lorem, vestibulum luctus nunc hendrerit commodo.",
+      "bands": [
+        "Iron Maiden",
+        "Metallica",
+        "Megadeth",
+        "NOFX"
+      ],
+      "influences": [
+        "Steve Harris",
+        "Cliff Burton",
+        "David Ellefson"
+      ],
+      "gear": "Dean Metalman ML"
     }
   }
 ]

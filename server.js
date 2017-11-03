@@ -2,10 +2,20 @@ const express = require('express');
 const next = require('next');
 const LRUCache = require('lru-cache');
 var minify = require('html-minifier').minify;
+const _ = require('lodash');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
+
+const memberIndex = {
+  "zejie": 0,
+  "likai": 1,
+  "kevin": 2,
+  "shawn": 3,
+  "denise": 4,
+  "kim": 5,
+};
 
 // This is where we cache our rendered HTML pages
 const ssrCache = new LRUCache({
@@ -23,6 +33,12 @@ app.prepare()
 
   server.get('/about', (req, res) => {
     renderAndCache(req, res, '/about');
+  })
+
+  server.get('/about/:id', (req, res) => {
+    const id = !!memberIndex[req.params.id] ? memberIndex[req.params.id] : req.params.id;
+    const queryParams = { id }
+    renderAndCache(req, res, '/member', queryParams);
   })
 
   server.get('/gigs', (req, res) => {

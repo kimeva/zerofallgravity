@@ -19,8 +19,9 @@ const FooterContainer = styled.div`
 
   p {
     color: #808080;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     font-size: 10px;
-    font-weight: 200px;
     margin: 0 0 5px 0;
 
     a {

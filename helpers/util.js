@@ -11,13 +11,13 @@ const retinaSuffix = '@2x';
 
 // images
 const backgroundImage = {
-  full: 'static/images/space-bg.jpg',
-  thumbnail: 'static/images/space-bg-sm.jpg'
+  full: '/static/images/space-bg.jpg',
+  thumbnail: '/static/images/space-bg-sm.jpg'
 };
 
 const backgroundVideoImage = {
-  full: 'static/images/zfg/zfg-bg-video-ss.jpg',
-  thumbnail: 'static/images/zfg/zfg-bg-video-ss-sm.jpg'
+  full: '/static/images/zfg/zfg-bg-video-ss.jpg',
+  thumbnail: '/static/images/zfg/zfg-bg-video-ss-sm.jpg'
 };
 
 export const getBackgroundImage = (isIndexPage) => isIndexPage ? backgroundVideoImage : backgroundImage;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 import { ImageLoader } from 'components';
 import { getImageAlt } from 'helpers/util';
 import {
@@ -7,7 +8,8 @@ import {
   MemberDetails,
   MemberName,
   MemberRole,
-  MemberSocialMedia
+  MemberSocialMedia,
+  Overlay
 } from '../../Styled/About/Member';
 
 export class MemberItem extends Component {
@@ -43,46 +45,33 @@ export class MemberItem extends Component {
 
   render() {
     const { resource, isRetina } = this.props;
-    const { name, role, socialMedia, images } = resource;
+    const { id, name, role, socialMedia, images } = resource;
     const image = isRetina ? images.profile['2x'] : images.profile['1x'];
+    const nameParam = name.first.replace(' ', '').toLowerCase();
 
     return (
+      <Link prefetch href={`/member?id=${id}`} as={`/about/${nameParam}`}>
       <MemberContainer>
         <ImageLoader
           fullSrc={image.fullSrc}
           thumbnailSrc={image.thumbnailSrc}
-          imgAlt={getImageAlt('Member', `${name} | ${role}`)}
+          imgAlt={getImageAlt('Member', `${name.full} | ${role}`)}
           isCover={false}
         />
+        <Overlay />
         <MemberDetails>
-          <MemberName>{name}</MemberName>
+          <MemberName>{name.full}</MemberName>
           <MemberRole>{role}</MemberRole>
           <MemberSocialMedia>
             {this.renderSocialMediaIcons(socialMedia)}
           </MemberSocialMedia>
         </MemberDetails>
       </MemberContainer>
+      </Link>
     );
   }
 }
 
 MemberItem.propTypes = {
-  resource: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    role: PropTypes.string.isRequired,
-    socialMedia: PropTypes.array.isRequired,
-    images: PropTypes.shape({
-      profile: PropTypes.shape({
-        "1x": PropTypes.shape({
-          fullSrc: PropTypes.string.isRequired,
-          thumbnailSrc: PropTypes.string.isRequired
-        }).isRequired,
-        "2x": PropTypes.shape({
-          fullSrc: PropTypes.string.isRequired,
-          thumbnailSrc: PropTypes.string.isRequired
-        }).isRequired
-      }).isRequired
-    }).isRequired
-  }).isRequired,
-  isRetina: PropTypes.bool.isRequired
+  resource: PropTypes.object.isRequired
 };

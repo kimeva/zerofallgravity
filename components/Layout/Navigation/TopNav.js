@@ -34,6 +34,7 @@ const NavLinks = styled.ul`
   list-style-type: none;
   overflow: hidden;
   transition: all 300ms ease-in-out;
+  margin-bottom: 10px;
 
   @media only screen and (max-width: ${props => props.theme.size['tablet-width-768']}px) {
     display: none;
@@ -41,7 +42,7 @@ const NavLinks = styled.ul`
 `;
 
 const NavLink = styled.li`
-  padding: 4px 16px;
+  padding: 0 10px;
   color: white;
 
   a {
@@ -50,7 +51,7 @@ const NavLink = styled.li`
     text-transform: uppercase;
     letter-spacing: 0.333em;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 200;
     transition: color 0.1s ease-in;
     
@@ -76,7 +77,7 @@ const SocialMediaLinks = styled.div`
     ${props => props.isToggled ? 'top 0.2s ease-in' : 'top 0.2s ease-out'};
 
   @media only screen and (max-width: ${props => props.theme.size['tablet-width-600']}px) {
-    top: ${props => props.isToggled ? '50px' : 0};
+    top: ${props => props.isToggled ? '45px' : 0};
     max-height: ${props => props.isToggled ? '150px' : 0};
     opacity: ${props => props.isToggled ? 1 : 0}
   }
@@ -280,13 +281,15 @@ const RightButtons = styled.div`
 const Brand = styled.div`
   background-image: url('/static/images/zfg/zfg-logo.png');
   background-position-y: center;
-  width: 350px;
-  height: 24px;
+  width: 250px;
+  height: 18px;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 5px;
 
   @media 
   only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -294,7 +297,7 @@ const Brand = styled.div`
   only screen and (     -o-min-device-pixel-ratio: 2/1),
   only screen and (        min-device-pixel-ratio: 2),
   only screen and (                min-resolution: 2dppx) {
-    background-image: url('static/images/zfg/zfg-logo@2x.png');
+    background-image: url('/static/images/zfg/zfg-logo@2x.png');
   }
 
   @media 
@@ -303,11 +306,11 @@ const Brand = styled.div`
   only screen and (     -o-min-device-pixel-ratio: 3/1),
   only screen and (        min-device-pixel-ratio: 3),
   only screen and (                min-resolution: 3dppx) {
-    background-image: url('static/images/zfg/zfg-logo@3x.png');
+    background-image: url('/static/images/zfg/zfg-logo@3x.png');
   }
 
   @media only screen and (min-width: ${props => props.theme.size['tablet-width-768']+1}px) {
-    height: 50px;
+    height: 18px;
   }
 
   @media only screen and (max-width: ${props => props.theme.size['tablet-width-768']}px) {

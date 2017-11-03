@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import Theme from 'components/Layout/Theme';
 import isRetina from 'is-retina';
-import { ImageLoader, Meta } from 'components';
+import { ImageLoader, Meta, Overlay } from 'components';
 import { getBackgroundImage } from '../helpers/util';
 
 const ErrorContainer = styled.div`
@@ -40,44 +40,11 @@ const ErrorContainer = styled.div`
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.5em;
+    letter-spacing: 1px;
     white-space: pre-line;
-
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-     -ms-animation: fadein 1s; /* Internet Explorer */
-      -o-animation: fadein 1s; /* Opera < 12.1 */
-         animation: fadein 1s;
-  
-    @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-    }
-  
-    /* Firefox < 16 */
-    @-moz-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-  
-    /* Safari, Chrome and Opera > 12.1 */
-    @-webkit-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-  
-    /* Internet Explorer */
-    @-ms-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-  
-    /* Opera < 12.1 */
-    @-o-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
+    z-index: 9999;
 
     @media only screen and (max-width: ${props => props.theme.size['mobile-width-425']}px) {
       font-size: 12px;
@@ -95,41 +62,8 @@ const ImageLogo = styled.div`
   -o-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 9999;
 
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 1s; /* Firefox < 16 */
-   -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
-       animation: fadein 1s;
-
-  @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-  }
-
-  /* Firefox < 16 */
-  @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  /* Safari, Chrome and Opera > 12.1 */
-  @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  /* Internet Explorer */
-  @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  /* Opera < 12.1 */
-  @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
 
   @media only screen and (max-width: ${props => props.theme.size['mobile-width-425']}px) {
     height: 200px;
@@ -145,41 +79,8 @@ const ErrorButton = styled.div`
   font-weight: 400;
   text-transform: uppercase;
   transition: background 0.25s ease-out, color 0.25s ease-out;
+  z-index: 9999;
 
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 1s; /* Firefox < 16 */
-   -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
-       animation: fadein 1s;
-
-  @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-  }
-
-  /* Firefox < 16 */
-  @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  /* Safari, Chrome and Opera > 12.1 */
-  @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  /* Internet Explorer */
-  @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  /* Opera < 12.1 */
-  @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
 
   &:hover {
     cursor: pointer;
@@ -212,13 +113,14 @@ export default class Error extends Component {
     return (
       <Theme>
         <ErrorContainer>
-          <Meta title={"Error"} />
+          <Meta title={"Whoops | Zero Fall Gravity"} />
           <ImageLoader
             fullSrc={full}
             thumbnailSrc={thumbnail}
             imgAlt={'Zero Fall Gravity | Background | Space by Nathan Anderson'}
             isCover
           />
+          <Overlay />
           <ImageLogo
             bgStyle={logoBgStyle}
           />

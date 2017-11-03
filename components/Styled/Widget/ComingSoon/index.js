@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ComingSoonPanel = styled.div`
   text-align: center;
-  height: calc( 100vh - 225px );
+  height: calc( 100vh - 195px );
 
   -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 0.5s; /* Firefox < 16 */
